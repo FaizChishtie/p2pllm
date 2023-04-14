@@ -44,6 +44,8 @@ git clone https://github.com/faizchishtie/p2pllm.git
 cd p2pllm
 ```
 
+> Note: you can run `make build-and-start` to do the following.
+
 2. Build the Docker image:
 
 ```bash
@@ -53,7 +55,7 @@ docker build -t p2pllm .
 3. Run the Docker container:
 
 ```bash
-	docker run -d -p 50070:50070 -p 8088:8088 -p 19888:19888 -p 9000:9000 --name p2pllm p2pllm
+docker run -d -p 50070:50070 -p 8088:8088 -p 19888:19888 -p 9000:9000 --name p2pllm p2pllm
 ```
 
 ## Usage
