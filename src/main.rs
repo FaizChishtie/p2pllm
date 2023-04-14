@@ -1,3 +1,4 @@
+use std::process::Command;
 use structopt::StructOpt;
 
 mod hdfs_utils;
@@ -42,6 +43,8 @@ fn main() {
 
             // Upload the file to HDFS
             hdfs_utils.upload_file(&file, &dest)?;
+
+            let model_id = "simple_feedforward.bin";
 
             // Convert the uploaded binary file to a TorchScript model using the specified loader script
             let loader_script_path = format!("./loaders/{}", loader);

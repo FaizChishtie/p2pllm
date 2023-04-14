@@ -60,6 +60,8 @@ docker run -d -p 50070:50070 -p 8088:8088 -p 19888:19888 -p 9000:9000 --name p2p
 
 ## Usage
 
+To upload a binary file containing model weights, you'll need to provide a loader script that converts the binary file to a TorchScript format. You can find instructions on creating and submitting loader parsers in the [Loaders](LOADERS.md) file.
+
 ### Uploading LLM binary file
 
 ```bash

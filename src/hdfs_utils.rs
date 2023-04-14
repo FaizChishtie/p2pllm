@@ -1,5 +1,5 @@
-use hdfs_rs::hdfs::Hdfs;
-use hdfs_rs::hdfs_builder::HdfsBuilder;
+use hdfs::Hdfs;
+use hdfs_builder::HdfsBuilder;
 use std::path::Path;
 
 pub struct HdfsUtils {
